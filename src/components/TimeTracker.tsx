@@ -1,9 +1,9 @@
-import { useState} from "react";
+import {useState} from "react";
 
 interface TimeEntry {
     id: number;
     task: string;
-    duration: number; // Duration in seconds
+    duration: number;
     date: string;
 }
 
@@ -120,7 +120,8 @@ const TimeTracker = () => {
                         No time entries yet. Start tracking!
                     </p>
                 ) : (
-                    <table className="w-full border-collapse border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200">
+                    <table
+                        className="w-full border-collapse border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200">
                         <thead>
                         <tr className="bg-gray-200 dark:bg-gray-800">
                             <th className="border border-gray-300 dark:border-gray-700 px-4 py-2">
